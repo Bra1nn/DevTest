@@ -11,7 +11,4 @@ UCLASS(Blueprintable)
 class OCTOGAMESTEST_API AInteractiveObjectBase : public AActor, public IInteractiveObjectInterface
 {
 	GENERATED_BODY()
-
-public:
-	void HandleCharacterBeginInteraction(AActor* InteractionCouser);
 };
