@@ -24,7 +24,7 @@ void ACinematicDriver::PlayCinametic(ULevelSequence* LevelSequence)
 			World, LevelSequence, PlaybackSettings, OutActor);
 		if (IsValid(LevelSequencePlayer))
 		{
-			LevelSequencePlayer->OnPlay.AddDynamic(this, &ACinematicDriver::OnCinematicFinished);
+			LevelSequencePlayer->OnPlay.AddDynamic(this, &ACinematicDriver::OnCinematicStarted);
 			LevelSequencePlayer->OnFinished.AddDynamic(this, &ACinematicDriver::OnCinematicFinished);
 			LevelSequencePlayer->Play();
 		}
